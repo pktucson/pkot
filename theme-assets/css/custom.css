@@ -1,0 +1,336 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&amp;family=Quicksand:wght@300..700&amp;family=Rye&amp;display=swap');
+
+/* Media Query values
+	--small-mobile-breakpoint: 480px;
+	--mobile-breakpoint: 768px;
+	--tablet-breakpoint: 1024px;
+	--desktop-breakpoint: 1280px;
+*/
+
+:root {
+	--h1-font: "Rye", cursive;
+	--heading-font: "Quicksand", sans-serif;
+	--body-font: "Noto Sans", sans-serif;
+	--color-mocha: rgba(73, 44, 37, 1);
+	--color-rusty-sands: rgba(162, 84, 47, 1);
+	--color-sandstone: rgba(232, 174, 96, 1);
+	--color-night-garden: rgba(11, 130, 104, 1);
+	--color-turquoise: rgba(1, 208, 247, 1);
+	--mocha-rgb: 73, 44, 37;
+	--rusty-sands-rgb: 162, 84, 47;
+	--sandstone-rgb: 232, 174, 96;
+	--night-garden-rgb: 11, 130, 104;
+	--turquoise-rgb: 1, 208, 247;
+
+}
+
+/* Body backgroud */
+body {
+	background: rgba(var(--mocha-rgb), 0.05); /* Light mocha background */
+}
+
+/* Font Edits */
+
+body, input, select, textarea {
+	font-family: var(--body-font), sans-serif;
+	color: black;
+}
+
+h2,h3 {
+	font-family: var(--heading-font), sans-serif;
+}
+
+h2,h3,h4 {
+	font-weight: 400
+}
+
+/* For the first major heading on the page - centered in the middle */
+.h1-font {
+	font-family: var(--h1-font), cursive;
+}
+
+/* Header */
+
+#banner header p:first-of-type {
+	margin-bottom: 1em;
+	letter-spacing: .25em;
+}
+
+.logo {
+	max-width: 75px;
+}
+
+#header #nav {
+	top: 2.5em;
+}
+
+/* Buttons */
+
+input[type="button"].primary,
+input[type="submit"].primary,
+input[type="reset"].primary,
+button.primary,
+.button.primary {
+	background: var(--color-night-garden);
+	border-color: var(--color-night-garden);
+}
+
+.button.primary:hover {
+	background: var(--color-mocha) !important;
+	border-color: var(--color-mocha) !important;
+}
+
+/* Banner Styles (top center of the page) */
+
+#banner .inner {
+	background-color: rgba(var(--mocha-rgb), 0.75);
+}
+
+#banner .inner header {
+	border: none;
+}
+
+#banner .inner .button, .double-line-btn {
+	line-height: 1.5;
+	padding: 1em;
+}
+
+#banner .inner p {
+	text-transform: none;
+}
+
+#banner {
+	padding: 10em;
+	background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+	url('../images/protest-bkg.webp');
+	background-size: cover;
+	background-position: center;
+}
+
+/* Section backgrounds */
+
+section.thin-banner {
+	background-color: var(--color-night-garden);
+	background-image: none;
+}
+
+.wrapper.style2 {
+	background-color: var(--color-rusty-sands);
+	background-image: none;
+}
+
+.thin-banner.white-bkg {
+	background-color: rgba(var(--sandstone-rgb), .1);
+	color: black;
+}
+
+/* Utility Classes */
+
+.caps {
+	text-transform: uppercase !important;
+}
+
+.center {
+	text-align: center;
+}
+
+.top-margin {
+	margin-top: 8em;
+}
+
+.max-width-80 {
+	max-width: 80%;
+	margin: 0 auto;
+}
+
+.donate-img {
+	max-width: 300px;
+}
+
+.about-img {
+	max-width: 450px;
+	margin: auto;
+	display: block;
+}
+
+.coming-soon {
+	padding: 80px;
+	margin: 40px auto;
+	font-weight: 900;
+	color: var(--color-rusty-sands);
+	background-color: rgba(var(--sandstone-rgb), .1);
+}
+
+.card{
+	padding: 80px;
+	margin: 40px auto;
+	background-color: rgba(var(--sandstone-rgb), .1);
+}
+
+.card h2  {
+	font-weight: 900;
+	color: var(--color-rusty-sands);
+}
+
+.org-img {
+	margin-bottom: 20px;
+}
+
+/* Event Card Styles */
+
+.event-card {
+	background: rgba(var(--sandstone-rgb), 0.2); 
+	color: black;
+	padding: 40px;
+	border-radius: 8px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+	margin-bottom: 20px;
+	transition: transform 0.3s ease;
+	margin: auto;
+}
+
+.event-card:hover {
+	transform: translateY(-10px);
+}
+
+dl.event-details {
+	display:grid;
+	grid-template-columns: 100px 1fr;
+	margin: 2em auto;
+	border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 1rem;
+  max-width: 400px;
+  background-color: #fff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  font-family: sans-serif;
+}
+
+.event-details dt, .event-details dd {
+	margin-bottom: 10px;
+}
+
+.event-details dt,
+.event-details dd {
+  display: inline-block;
+  margin: 0;
+  padding: 0.25rem 0;
+  vertical-align: top;
+}
+
+.event-details dt {
+  width: 80px;
+  font-weight: bold;
+  color: #333;
+}
+
+.event-details dd {
+  width: calc(100% - 80px);
+  color: #555;
+}
+
+.event-details a {
+  color: #0077cc;
+  text-decoration: none;
+}
+
+.event-details a:hover {
+  text-decoration: underline;
+}
+
+/* Mailing List Styles */
+
+#mailing-list
+{
+	max-width: 600px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.text-block.fr-inner {
+	color: white !important;
+}
+
+/* Social Icon styles */
+
+.icon.circle.fa-bluesky {
+	background: #151e28;
+	color: #0687ff;
+}
+
+.icon.circle.fa-bluesky:hover {
+	background: #293544;
+}
+
+.icon.circle.fa-instagram {
+	background: #e1306c;
+	color: white;
+}
+
+.icon.circle.fa-instagram:hover {
+	background: rgb(212, 77, 153)
+}
+
+.icon.circle.fa-tiktok {
+	background: #000;
+	color: #69c9d0; /* TikTok's signature color */
+}
+
+.icon.circle.fa-tiktok:hover {
+	background: #404040; /* Lighter shade for hover effect */
+}
+
+.icon.circle.linktree {
+	background: #3ee962;
+	color: white;
+}
+
+.icon.circle.linktree:hover {
+	background: rgb(52, 201, 87); /* Darker shade for hover effect */
+}
+
+.icon.circle.linktree::before {
+  content: url("images/linktree.svg");
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  vertical-align: middle;
+  line-height: 1;
+  transform: translateY(-3px); /* adjust as needed */
+}
+
+/* Media Queries */
+
+@media (max-width: 768px) {
+	.button.primary.small {
+		margin: auto;
+		display: block;
+	}
+
+	#banner {
+		padding: 5em;
+		padding-top: 5em;
+	}
+
+	#banner .inner {
+		padding: 3em;
+	}
+}
+
+@media (max-width: 1280px) {
+	.about-img {
+		max-width: 350px;
+	}
+}
+
+@media (max-width: 480px) {
+	#banner {
+		padding: 2em;
+		padding-top:6em;
+		padding-bottom: 6em;
+	}
+
+	#banner .inner {
+		padding: 3em;
+	}
+}
