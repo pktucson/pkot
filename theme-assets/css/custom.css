@@ -145,6 +145,8 @@ section.thin-banner {
 
 .donate-img {
 	max-width: 300px;
+  	background: white;
+  	border-radius: 10%;
 }
 
 .about-img {
