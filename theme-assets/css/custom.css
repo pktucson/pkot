@@ -235,13 +235,11 @@ button.primary,
 
 /* Button Row Section */
 #button-row {
-    width: 100vw;
 	margin: 1em;
     background: none;
 }
 .button-row-container {
     display: flex;
-    width: 100vw;
     gap: 5px;
     justify-content: center;
     align-items: stretch;
