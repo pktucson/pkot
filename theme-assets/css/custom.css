@@ -159,6 +159,7 @@ button.primary,
     margin: 0.3em auto;
     text-align: center;
     word-break: break-word;
+	line-height: 1em;
 }
 
 .banner-subtitle {
