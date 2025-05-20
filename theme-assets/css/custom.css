@@ -236,8 +236,7 @@ button.primary,
 /* Button Row Section */
 #button-row {
     width: 100vw;
-	margin: 0;
-	margin-bottom: 3vh;
+	margin: 1em;
     background: none;
 }
 .button-row-container {
@@ -267,9 +266,9 @@ button.primary,
     box-shadow: none;
 }
 .row-button:hover {
-    background: var(--color-night-garden);
+    background: #555;
     color: #fff;
-    border-color: var(--color-night-garden);
+    border-color: #fff;
 }
 
 /* Utility Classes */
