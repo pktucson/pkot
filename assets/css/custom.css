@@ -1,0 +1,336 @@
+/* Import fonts */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Quicksand:wght@300..700&family=Rye&display=swap');
+
+/* Media Query values
+	--small-mobile-breakpoint: 480px;
+	--mobile-breakpoint: 768px;
+	--tablet-breakpoint: 1024px;
+	--desktop-breakpoint: 1280px;
+*/
+
+/* Root variables */
+:root {
+	--h1-font: "Rye", cursive;
+	--heading-font: "Quicksand", sans-serif;
+	--body-font: "Noto Sans", sans-serif;
+	--color-mocha: #492c25;
+	--color-rusty-sands: #a2542f;
+	--color-sandstone: #e8ae60;
+	--color-night-garden: #0b8268;
+	--color-turquoise: #01d0f7;
+	--mocha-rgb: 73, 44, 37;
+	--rusty-sands-rgb: 162, 84, 47;
+	--sandstone-rgb: 232, 174, 96;
+	--night-garden-rgb: 11, 130, 104;
+	--turquoise-rgb: 1, 208, 247;
+}
+
+/* General body and font styles */
+html, body {
+	margin: 0;
+	padding: 0;
+	scroll-behavior: smooth;
+}
+body {
+	background: rgba(var(--mocha-rgb), 0.05); /* Light mocha background */
+	font-family: var(--body-font), sans-serif;
+}
+body, #page-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+#page-wrapper {
+	flex: 1 0 auto;
+}
+
+/* Smooth scroll glitch fix */
+#header.reveal {
+	position: absolute
+}
+
+/* Font Edits */
+
+body, input, select, textarea {
+	font-family: var(--body-font), sans-serif;
+	color: black;
+}
+
+h2,h3 {
+	font-family: var(--heading-font), sans-serif;
+}
+
+h2,h3,h4 {
+	font-weight: 400
+}
+
+/* For the first major heading on the page - centered in the middle */
+.h1-font {
+	font-family: var(--h1-font), cursive;
+}
+
+/* Header styles */
+#header {
+	position: relative;
+	z-index: 2;
+	background: transparent;
+	box-shadow: none;
+}
+#logo img.logo {
+	max-width: 120px;
+}
+#nav ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	gap: 1.5em;
+}
+#nav li {
+	display: inline-block;
+}
+#nav a {
+	text-decoration: none;
+	font-family: var(--heading-font), sans-serif;
+	font-weight: 500;
+	color: #222;
+	padding: 0.5em 0.8em;
+	border-radius: 6px;
+	transition: background 0.2s, color 0.2s;
+}
+#nav a.button.primary {
+	background: var(--color-night-garden);
+	color: #fff;
+}
+#nav a.button.primary:hover {
+	background: var(--color-mocha);
+}
+
+/* Buttons */
+
+input[type="button"].primary,
+input[type="submit"].primary,
+input[type="reset"].primary,
+button.primary,
+.button.primary {
+	background: var(--color-night-garden);
+	border-color: var(--color-night-garden);
+}
+
+.button.primary:hover {
+	background: var(--color-mocha) !important;
+	border-color: var(--color-mocha) !important;
+}
+
+/* Banner layout */
+#banner {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    min-height: 100vh;
+    padding: 0;
+    background-image: linear-gradient(rgba(255,255,255,0.4), rgba(0,0,0,0.4)), url('../images/pkot_banner.png');
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+}
+
+.banner-content {
+    width: 100vw;
+    background: rgba(var(--mocha-rgb), 0.75);
+    padding: 2.5em 0;
+    border-radius: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner-title {
+    font-family: var(--heading-font), sans-serif;
+    font-size: clamp(2em, 6vw, 3.5em);
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: #fff;
+    margin: 0.3em auto;
+    text-align: center;
+    word-break: break-word;
+	line-height: 1em;
+}
+
+.banner-subtitle {
+    font-family: var(--body-font), sans-serif;
+    font-size: clamp(1em, 2.5vw, 1.5em);
+    font-weight: 400;
+    color: #e8ae60;
+    opacity: 0.85;
+    letter-spacing: 0.08em;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+/* About jump indicator (not button styled) */
+.about-jump-indicator {
+    position: absolute;
+    left: 50%;
+    bottom: 40px;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: #fff;
+    font-family: var(--heading-font), sans-serif;
+    font-size: 1.1em;
+    opacity: 0.85;
+    cursor: pointer;
+    transition: color 0.2s, opacity 0.2s;
+    user-select: none;
+	border-bottom-style: none;
+}
+.about-jump-indicator:hover,
+.about-jump-indicator:focus {
+    color: var(--color-sandstone);
+    opacity: 1;
+    text-decoration: none;
+}
+.about-label {
+    font-size: 1.1em;
+    letter-spacing: 0.08em;
+    margin-bottom: 0.05em;
+}
+.down-caret {
+    font-size: 1.5em;
+    line-height: 1;
+    margin-top: -0.3em;
+    letter-spacing: 0;
+    display: block;
+}
+
+/* About Section */
+.about-section {
+    width: 100vw;
+	min-height: calc(100vh - 120px);
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 4em 1.5em 2em 1.5em;
+    background: #fff;
+    box-sizing: border-box;
+}
+.about-section h2 {
+    font-family: var(--heading-font), sans-serif;
+    font-size: 2em;
+    font-weight: 700;
+    margin-bottom: 0.7em;
+}
+.about-section p {
+    font-family: var(--body-font), sans-serif;
+    font-size: 1.1em;
+    color: #222;
+    line-height: 1.7;
+}
+
+/* Button Row Section */
+#button-row {
+	margin: 1em;
+    background: none;
+}
+.button-row-container {
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+    align-items: stretch;
+}
+.row-button {
+    flex: 1 1 0;
+    aspect-ratio: 2 / 1;
+    max-height: 75px;
+	max-width: 200px;
+    background: rgba(255,255,255,0.92);
+    border: 2px solid #222;
+    border-radius: 0.7em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.1em;
+    font-family: var(--heading-font), sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+    color: #222;
+    transition: background 0.2s, color 0.2s, border 0.2s;
+    box-shadow: none;
+}
+.row-button:hover {
+    background: #555;
+    color: #fff;
+    border-color: #fff;
+}
+
+/* Utility Classes */
+
+.caps {
+	text-transform: uppercase !important;
+}
+
+.center {
+	text-align: center;
+}
+
+.top-margin {
+	margin-top: 8em;
+}
+
+.max-width-80 {
+	max-width: 80%;
+	margin: 0 auto;
+}
+
+.donate-img {
+	max-width: 300px;
+  	background: white;
+  	border-radius: 10%;
+}
+
+.about-img {
+	max-width: 450px;
+	margin: auto;
+	display: block;
+}
+
+.card{
+	padding: 80px;
+	margin: 40px auto;
+	background-color: rgba(var(--sandstone-rgb), .1);
+}
+
+.card h2  {
+	font-weight: 900;
+	color: var(--color-rusty-sands);
+}
+
+.org-img {
+	margin-bottom: 20px;
+}
+
+/* Media Queries */
+
+@media (max-width: 840px) {
+	h2 {
+		text-align: right;
+	}
+}
+
+@media (max-width: 480px) {
+	.button-row-container {
+		flex-direction: column;
+	}
+	.row-button {
+		height: auto;
+		max-width:100vw;
+		aspect-ratio: 6;
+	}
+}
