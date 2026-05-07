@@ -1,0 +1,288 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;600;700&family=Quicksand:wght@500;700&display=swap");
+
+:root {
+	--body-font: "Noto Sans", Arial, sans-serif;
+	--heading-font: "Quicksand", Arial, sans-serif;
+	--mocha: #492c25;
+	--rust: #a2542f;
+	--sandstone: #e8ae60;
+	--garden: #0b8268;
+	--paper: #fffdf8;
+	--ink: #1d1917;
+	--muted: #5a524f;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	margin: 0;
+	background: #f9f7f6;
+	color: var(--ink);
+	font-family: var(--body-font);
+	font-size: 17px;
+	line-height: 1.65;
+}
+
+img {
+	display: block;
+	max-width: 100%;
+}
+
+a {
+	color: var(--garden);
+	text-underline-offset: 0.16em;
+}
+
+a:hover,
+a:focus-visible {
+	color: var(--rust);
+}
+
+b,
+strong {
+	font-weight: 700;
+}
+
+h1,
+h2,
+h3 {
+	margin: 1.7em 0 0.65em;
+	font-family: var(--heading-font);
+	line-height: 1.18;
+}
+
+h1 {
+	margin-top: 0;
+	font-size: clamp(2rem, 6vw, 3.4rem);
+}
+
+h2 {
+	font-size: clamp(1.45rem, 4vw, 2.1rem);
+}
+
+h3 {
+	font-size: 1.2rem;
+}
+
+p,
+ul,
+ol,
+blockquote {
+	margin: 0 0 1.25rem;
+}
+
+blockquote {
+	margin-left: 0;
+	padding-left: 1rem;
+	border-left: 4px solid var(--sandstone);
+	color: var(--muted);
+}
+
+/* Home */
+
+.home-page {
+	min-height: 100vh;
+}
+
+#page-wrapper {
+	min-height: 100vh;
+}
+
+#header {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 2;
+	width: 100%;
+	padding: 1rem;
+}
+
+#logo {
+	margin: 0;
+}
+
+#logo a {
+	display: inline-block;
+}
+
+#logo img {
+	width: 120px;
+}
+
+#banner {
+	position: relative;
+	display: flex;
+	min-height: 100vh;
+	align-items: center;
+	justify-content: center;
+	overflow: hidden;
+	background-image: linear-gradient(rgba(255, 255, 255, 0.4), rgba(0, 0, 0, 0.42)), url("images/pkot_banner.png");
+	background-position: center;
+	background-size: cover;
+}
+
+.banner-content {
+	width: 100%;
+	padding: 2.5rem 1rem;
+	background: rgba(73, 44, 37, 0.75);
+	text-align: center;
+}
+
+.banner-subtitle,
+.banner-title,
+.about-jump-indicator {
+	font-family: var(--heading-font);
+}
+
+.banner-subtitle {
+	color: var(--sandstone);
+	font-size: clamp(1rem, 2.5vw, 1.5rem);
+	letter-spacing: 0.08em;
+}
+
+.banner-title {
+	margin: 0.2em auto 0;
+	color: white;
+	font-size: clamp(2rem, 6vw, 3.5rem);
+	font-weight: 700;
+	letter-spacing: 0.12em;
+	line-height: 1;
+	text-transform: uppercase;
+}
+
+.about-jump-indicator {
+	position: absolute;
+	bottom: 2.5rem;
+	left: 50%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	color: white;
+	font-size: 1.05rem;
+	text-decoration: none;
+	transform: translateX(-50%);
+}
+
+.about-jump-indicator:hover,
+.about-jump-indicator:focus-visible {
+	color: var(--sandstone);
+}
+
+.down-caret {
+	margin-top: -0.4rem;
+	font-size: 1.5rem;
+	line-height: 1;
+}
+
+.about-section {
+	width: min(100%, 900px);
+	min-height: calc(100vh - 120px);
+	margin: 0 auto;
+	padding: 4rem 1.5rem 2rem;
+	background: white;
+}
+
+.about-section h2 {
+	margin-top: 0;
+	font-weight: 700;
+}
+
+.about-section p {
+	font-size: 1.08rem;
+}
+
+/* Markdown pages */
+
+.resource-page {
+	min-height: 100vh;
+	background: var(--paper);
+}
+
+.cover-image {
+	width: 100%;
+	height: clamp(150px, 28vw, 300px);
+	object-fit: cover;
+}
+
+.content {
+	width: min(100%, 680px);
+	margin: 0 auto;
+	padding: clamp(1.5rem, 5vw, 2.5rem);
+	overflow-wrap: anywhere;
+}
+
+.content li + li {
+	margin-top: 0.35rem;
+}
+
+.content a {
+	font-weight: 600;
+}
+
+.content > :last-child {
+	margin-bottom: 0;
+}
+
+/* Donate */
+
+.donate-row {
+	display: flex;
+	width: min(calc(100% - 2rem), 520px);
+	margin: 0 auto 2rem;
+	padding: 0.75rem 1rem;
+	align-items: center;
+	justify-content: center;
+	gap: clamp(1rem, 4vw, 2rem);
+	border-top: 1px solid #ded2cc;
+}
+
+.donate-link {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	flex: 0 1 180px;
+	padding: 0.35rem;
+	border-radius: 6px;
+}
+
+.venmo-logo {
+	width: min(42vw, 168px);
+	height: auto;
+}
+
+.venmo-qr {
+	width: clamp(84px, 22vw, 118px);
+	height: clamp(84px, 22vw, 118px);
+}
+
+@media (max-width: 560px) {
+	body {
+		font-size: 16px;
+	}
+
+	#header {
+		padding: 0.75rem;
+	}
+
+	#logo img {
+		width: 92px;
+	}
+
+	.banner-content {
+		padding-block: 2rem;
+	}
+
+	.banner-title {
+		letter-spacing: 0.08em;
+	}
+
+	.about-section {
+		padding-top: 3rem;
+	}
+}
