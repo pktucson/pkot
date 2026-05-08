@@ -4,6 +4,7 @@ Every risk profile includes different tollerances. This guide was originally mad
 
 Keep in mind that the safest electronic device is one used offline permanently deep in a cave outside signal range. Strong security is, at all times, a ballancing act with other priorities.
 
+
 # Introductory Topics
 
 ## How to SEC
@@ -23,6 +24,7 @@ The ACLU has a [quick breakdown](https://www.acludc.org/en/how-defend-against-po
 [DeFlock](https://deflock.me/map#map=10/32.274281/-110.942699) is an awesome project tracking ALPR (License Plate Tracking) camera locations. 
 
 Regarding smartphones, I would add that airplane mode or turning off your phone is (probably) not enough (unless you are running GrapheneOS on a Pixel 5 or later). The easy answers are to leave it at home or use a [Faraday bag](https://godarkbags.com/products/godark-faraday-bags-phone-small-bundle) anywhere remotely near a location of concern. The advanced answer is [gently verbose](https://markdownpastebin.com/?id=a4d0f82f1d46453dab0ef0b165d74965).
+
 
 # Intermediate Topics
 
@@ -66,6 +68,9 @@ Last I personally checked, the stock *iPhone* OSK keeps a limited keylog, but th
 
 *Android*-based keyboards, on the other hand, are an outright nightmare, tracking the 💩 out of you and often sidesteping all manner of privacy precautions. I'd recommend [Futo](https://keyboard.futo.org/) and disabling every other thing you can outside it.
 
-## Closing note
+
+# Advanced Topics
+
+## Closing Note
 
 I have no time to upkeep this document, but the ultimate solution to device security is to use hardware capable of supporting a hardened system, namely GrapheneOS on a recent Pixel device (Pixel 7a or later). There are many [reasons](https://grapheneos.org/faq) for this and I recommend reading and understanding their [FAQ](https://grapheneos.org/faq), not just for understanding Graphene, but to understand the general landscape. 
