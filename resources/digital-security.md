@@ -1,8 +1,10 @@
-# Introductory Topics
+# Foreward
 
 Every risk profile includes different tollerances. This guide was originally made as intentionally rigid guidance to those entering sensitive conversations. Many in broad spaces do not follow nearly any of this and are just fine; some have neglected some of these and it has become an issue for those involved. The risk you bear may not entail everything here, but it remains a reference. 
 
 Keep in mind that the safest electronic device is one used offline permanently deep in a cave outside signal range. Strong security is, at all times, a ballancing act with other priorities.
+
+# Introductory Topics
 
 ## How to SEC
 
