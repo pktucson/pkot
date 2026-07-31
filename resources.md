@@ -18,21 +18,21 @@ Here you'll find in-house guidance and curated community knowledge. The guide an
 
 > This is a fantastic de-escalation handbook; perhaps a 5 minute read.
 
-- [Radio Usage Guide](/resources/radio.html)
+- [Radio Usage Guide](resources/radio.html)
 
 > Absolutely **essential** guidance on communicating via radio.
 
 ### Preparation and Gear
 
-- [Preparation](/resources/preparation.html)  
+- [Preparation](resources/preparation.html)
 
 > Recommendations in preparation for supporting a demonstration.
 
-- [AIF Guidance](/resources/aif-handbook.pdf)
+- [AIF Guidance](resources/aif-handbook.pdf)
 
 > A simply incredible, comprehensive protest handbook.
 
-- [Respirators](/resources/respirators.html)
+- [Respirators](resources/respirators.html)
 
 > Tips and gear recommendations on dealing with gaseous crowd deterrence.
 
@@ -56,10 +56,10 @@ Here you'll find in-house guidance and curated community knowledge. The guide an
 
 ### Digital Safety
 
-- [0x Security Guide](/resources/digital-security.html)
+- [0x Security Guide](resources/digital-security.html)
 
 > This guide was written as privacy recommendations. It has now become a minimum baseline. Read, understand, ask questions, and follow it.
 
-- [0x Guía de Privacidad](/resources/seguridad-digital.html)
+- [0x Guía de Privacidad](resources/seguridad-digital.html)
 
 > Esta guía se redactó como recomendaciones de privacidad. Ahora es un requisito indispensable. Léala, compréndala, pregunte y sígala.
