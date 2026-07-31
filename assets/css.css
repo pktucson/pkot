@@ -136,7 +136,7 @@ blockquote {
 
 .banner-subtitle,
 .banner-title,
-.about-jump-indicator {
+.primary-cta {
 	font-family: var(--heading-font);
 }
 
@@ -156,28 +156,31 @@ blockquote {
 	text-transform: uppercase;
 }
 
-.about-jump-indicator {
-	position: absolute;
-	bottom: 2.5rem;
-	left: 50%;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
+.banner-copy {
+	width: min(100%, 620px);
+	margin: 1rem auto 1.4rem;
 	color: white;
-	font-size: 1.05rem;
+	font-size: 1.08rem;
+}
+
+.primary-cta {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 2.75rem;
+	padding: 0 1.25rem;
+	border: 2px solid var(--sandstone);
+	background: var(--sandstone);
+	color: var(--ink);
+	font-weight: 700;
 	text-decoration: none;
-	transform: translateX(-50%);
 }
 
-.about-jump-indicator:hover,
-.about-jump-indicator:focus-visible {
-	color: var(--sandstone);
-}
-
-.down-caret {
-	margin-top: -0.4rem;
-	font-size: 1.5rem;
-	line-height: 1;
+.primary-cta:hover,
+.primary-cta:focus-visible {
+	border-color: white;
+	background: white;
+	color: var(--mocha);
 }
 
 .about-section {
@@ -195,6 +198,10 @@ blockquote {
 
 .about-section p {
 	font-size: 1.08rem;
+}
+
+.primary-cta-inline {
+	margin-top: 0.5rem;
 }
 
 /* Markdown pages */
@@ -227,38 +234,6 @@ blockquote {
 
 .content > :last-child {
 	margin-bottom: 0;
-}
-
-/* Donate */
-
-.donate-row {
-	display: flex;
-	width: min(calc(100% - 2rem), 520px);
-	margin: 0 auto 2rem;
-	padding: 0.75rem 1rem;
-	align-items: center;
-	justify-content: center;
-	gap: clamp(1rem, 4vw, 2rem);
-	border-top: 1px solid #ded2cc;
-}
-
-.donate-link {
-	display: inline-flex;
-	align-items: center;
-	justify-content: center;
-	flex: 0 1 180px;
-	padding: 0.35rem;
-	border-radius: 6px;
-}
-
-.venmo-logo {
-	width: min(42vw, 168px);
-	height: auto;
-}
-
-.venmo-qr {
-	width: clamp(84px, 22vw, 118px);
-	height: clamp(84px, 22vw, 118px);
 }
 
 @media (max-width: 560px) {
